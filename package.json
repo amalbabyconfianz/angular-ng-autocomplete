@@ -37,7 +37,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ngcc"
+    "postinstall": "./node_modules/angular-autocomplete && npm install && npm run build"
   },
   "private": true,
   "dependencies": {
