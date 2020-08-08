@@ -262,6 +262,8 @@ export class AutocompleteComponent implements OnInit, OnChanges, AfterViewInit, 
    */
   public select(item) {
     this.query = !this.isType(item) ? item[this.searchKeyword] : item;
+    var a = this.query.split(' - ');
+    this.query = a[1] + ' - ' + a[2] + ' - ' + a[3] + ' - ' + a[4];
     this.isOpen = true;
     this.overlay = false;
     this.selected.emit(item);
