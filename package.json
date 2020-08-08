@@ -36,8 +36,7 @@
     "package": "npm run build_lib && npm run npm_pack",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "cd node_modules/angular-ng-autocomplete && npm install && npm run build"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
